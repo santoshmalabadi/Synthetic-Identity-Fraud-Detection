@@ -1,0 +1,177 @@
+/* ============================================================
+   Synthetic Identity Fraud Detection – Global Stylesheet
+   Dark navy cybersecurity theme
+   ============================================================ */
+
+/* ── Root Variables ─────────────────────────────────────────── */
+:root {
+  --bg-primary:   #0a0e1a;
+  --bg-card:      #0d1b2a;
+  --bg-card2:     #111d2e;
+  --accent-blue:  #1e90ff;
+  --accent-cyan:  #00d4ff;
+  --color-green:  #00c896;
+  --color-amber:  #ffb300;
+  --color-red:    #ff4c4c;
+  --color-orange: #ff7700;
+  --text-primary: #e0e6f0;
+  --text-muted:   #8899aa;
+  --border:       rgba(30, 144, 255, 0.18);
+  --shadow:       0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* ── Body & App ──────────────────────────────────────────────── */
+.stApp {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────────── */
+[data-testid="stSidebar"] {
+  background: linear-gradient(180deg, #060c18 0%, #0a1628 100%) !important;
+  border-right: 1px solid var(--border) !important;
+}
+[data-testid="stSidebar"] .stMarkdown h1,
+[data-testid="stSidebar"] .stMarkdown h2,
+[data-testid="stSidebar"] .stMarkdown h3 {
+  color: var(--accent-cyan) !important;
+}
+
+/* ── Metric Cards ────────────────────────────────────────────── */
+[data-testid="metric-container"] {
+  background: var(--bg-card2) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px !important;
+  padding: 16px !important;
+  box-shadow: var(--shadow) !important;
+}
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+  color: var(--accent-cyan) !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+}
+[data-testid="metric-container"] [data-testid="stMetricLabel"] {
+  color: var(--text-muted) !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+}
+
+/* ── DataFrames / Tables ─────────────────────────────────────── */
+[data-testid="stDataFrame"] {
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────── */
+.stButton > button {
+  background: linear-gradient(135deg, #1e3a5f, #1e90ff) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+  transition: transform 0.15s, box-shadow 0.15s !important;
+}
+.stButton > button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.4) !important;
+}
+
+/* ── Inputs & Selects ────────────────────────────────────────── */
+.stTextInput input,
+.stSelectbox select,
+.stNumberInput input,
+.stDateInput input {
+  background: #0d1b2a !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 6px !important;
+}
+
+/* ── Expander ────────────────────────────────────────────────── */
+[data-testid="stExpander"] {
+  background: var(--bg-card2) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+}
+
+/* ── Tabs ─────────────────────────────────────────────────────── */
+[data-testid="stTabs"] [role="tab"] {
+  color: var(--text-muted) !important;
+  font-weight: 500 !important;
+}
+[data-testid="stTabs"] [role="tab"][aria-selected="true"] {
+  color: var(--accent-cyan) !important;
+  border-bottom: 2px solid var(--accent-cyan) !important;
+}
+
+/* ── Success / Warning / Error Alerts ────────────────────────── */
+[data-testid="stAlert"] {
+  border-radius: 8px !important;
+  border-left-width: 4px !important;
+}
+
+/* ── Progress Bar ────────────────────────────────────────────── */
+[data-testid="stProgress"] > div > div {
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan)) !important;
+}
+
+/* ── Custom Card Utility (used via st.markdown) ──────────────── */
+.fraud-card {
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+}
+.fraud-card h4 {
+  color: var(--accent-cyan);
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ── Risk Badge Colours ──────────────────────────────────────── */
+.risk-low      { color: #00c896; font-weight: 700; }
+.risk-medium   { color: #ffb300; font-weight: 700; }
+.risk-high     { color: #ff7700; font-weight: 700; }
+.risk-critical { color: #ff4c4c; font-weight: 700; }
+
+/* ══════════════════════════════════════════════════════════════
+   Hide default Streamlit multi-page navigation menu
+   (auto-generated from the pages/ directory).
+   The app uses its own custom sidebar radio for navigation.
+   ══════════════════════════════════════════════════════════════ */
+
+/* Primary selector – the nav container Streamlit renders */
+[data-testid="stSidebarNav"],
+[data-testid="stSidebarNavItems"],
+[data-testid="stSidebarNavLink"],
+section[data-testid="stSidebar"] nav,
+section[data-testid="stSidebar"] ul[data-testid="stSidebarNavItems"] {
+  display: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove the blank vertical gap Streamlit inserts above the sidebar
+   content to make room for the page-switcher it no longer shows.   */
+section[data-testid="stSidebar"] > div:first-child {
+  padding-top: 0 !important;
+}
+
+/* Belt-and-suspenders: catch any wrapper divs that hold the nav */
+section[data-testid="stSidebar"] [data-testid="stSidebarNavContainer"] {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}

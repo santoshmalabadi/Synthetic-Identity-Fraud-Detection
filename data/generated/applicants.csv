@@ -1,0 +1,438 @@
+applicant_id,full_name,dob,email,phone,address,city,state,pincode,id_ref,device_id,application_date,employer,employment_type,annual_income,application_status,ground_truth_label,applicant_type,risk_score,risk_category,risk_flags,risk_explanation,analyst_note,age,phone_shared_count,phone_suspicious,email_shared_count,email_suspicious,device_shared_count,device_suspicious,address_shared_count,address_suspicious
+APP-30149191,Forum Das,2004-02-10,arastogi@example.net,6118367365,"H.No. 65, Prasad Road",Bhalswa Jahangir Pur,Assam,116152,SYN-4691564033,DEV-A6CFDE582D91,2025-12-17,Setty-Tiwari,Salaried,477819.8,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,22,1,False,1,False,1,False,1,False
+APP-34244463,Faraj Patel,1973-10-03,uchad@example.net,+915819956046,"82/62, Luthra Street",Agartala,Meghalaya,126464,DOC-4445130451,DEV-126F2CBD3F5C,2026-02-16,N/A,Unemployed,6838908.19,New,synthetic_fraud,synthetic_identity,15.0,Low,"['Unemployed applicant reports income 6,838,908 (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,53,1,False,1,False,1,False,1,False
+APP-38186619,Gavin Uppal,1990-03-23,vorasanya@example.net,02795687833,"H.No. 910
+Tiwari Circle",Chapra,Nagaland,258713,REF-9635933786,DEV-1B231B44B9BE,2025-12-10,N/A,Unemployed,371983.36,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,36,1,False,1,False,1,False,1,False
+APP-21159241,Girindra Raju,2001-07-02,balveerkota@example.net,09782071518,"88
+Dutt",Serampore,Jharkhand,659051,DOC-7112030342,DEV-36E65248DEE5,2026-04-29,N/A,Unemployed,261096.98,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,25,1,False,1,False,1,False,1,False
+APP-64061537,Yatin Baral,2000-04-10,chamankalla@example.org,+916064746872,"50/097, Wali Circle",Howrah,Mizoram,219136,SYN-6915699767,DEV-EAA916418AA1,2026-05-05,Rattan Inc,Contract,398447.79,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,26,1,False,1,False,1,False,1,False
+APP-27801813,Madhav Babu,1962-01-01,ekantamandal@example.com,04033173936,"54/45
+Tank Circle",Navi Mumbai,Uttar Pradesh,535560,DOC-3516539575,DEV-7C491673346D,2026-11-15,N/A,Unemployed,204945.19,New,synthetic_fraud,synthetic_identity,15.0,Low,['Date of birth is Jan 1st – often a placeholder (+15 pts)'],"Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,64,1,False,1,False,1,False,1,False
+APP-42856565,Reva Dash,1987-04-22,katabhavya@example.net,+912812067974,"71/349
+Sandal Ganj",Tinsukia,Haryana,421024,REF-3408379085,DEV-EBBEC6A9F0CC,2026-03-26,Bumb-Dugar,Contract,81886.75,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,39,1,False,1,False,1,False,1,False
+APP-38687260,Radhika De,1984-09-03,girik03@example.net,+910202758842,"410
+Sanghvi Path",Serampore,Manipur,918261,SYN-8378959512,DEV-EE21BF548306,2026-08-13,Bhasin-Dhar,Contract,185684.16,New,fraud_ring,fraud_ring,95.0,Critical,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Device ID shared with 3 other applicant(s) (+25 pts)', 'Address shared with 3 other applicant(s) (+10 pts)', 'Multiple (3) shared attributes detected (+10 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  • Shared Device: +25
+  • Shared Address: +10
+  • Multiple Shared: +10
+  Total: 65/100 → High Risk
+Recommendation: Escalate to fraud analyst for manual review before approval.
+  • Fraud ring membership: +30 pts → 95/100 (Critical)",,42,5,True,1,False,4,True,4,True
+APP-11316541,Maya Patla,1990-05-24,xz693908@tempmail.xyz,9371240659,"92/459
+Srinivas Ganj",Belgaum,Madhya Pradesh,479356,DOC-8826513551,DEV-F471269C3A25,2026-02-01,Koshy-Tandon,Self-Employed,940132.48,New,synthetic_fraud,synthetic_identity,30.0,Medium,"['Suspicious disposable email domain: tempmail.xyz (+15 pts)', 'Email local part contains excessive digits (possibly auto-generated) (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +30
+  Total: 30/100 → Medium Risk
+Recommendation: Request additional identity verification documents.",,36,1,False,1,False,1,False,1,False
+APP-31666954,Kevin Sridhar,1966-07-07,charlesrandhawa@example.net,00632424154,"36/110
+Sood Ganj",Mira-Bhayandar,Odisha,870051,REF-4193690557,DEV-BA54CD60AEEA,2026-11-06,Prabhu Ltd,Contract,372233.51,New,fraud_ring,fraud_ring,50.0,Medium,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  Total: 20/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.
+  • Fraud ring membership: +30 pts → 50/100 (Medium)",,60,5,True,1,False,1,False,1,False
+APP-13403018,Kashvi Dhaliwal,1988-03-31,vrishti85@example.net,1918255371,"69/15
+Shankar Path",Bihar Sharif,Punjab,251341,REF-7397155013,DEV-9F094A244AAC,2026-03-28,N/A,Unemployed,6031302.61,New,synthetic_fraud,synthetic_identity,15.0,Low,"['Unemployed applicant reports income 6,031,303 (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,38,1,False,1,False,1,False,1,False
+APP-95464840,Dayamai Gill,1968-11-18,arunimachacko@example.com,00632424154,"32/85, Bhatti Marg",Junagadh,Telangana,031617,SYN-7657553918,DEV-289DF575229B,2026-03-12,Ratti-Butala,Self-Employed,1170352.54,New,fraud_ring,fraud_ring,65.0,High,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Pincode starts with zeros: 031617 – possibly invalid (+15 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  • Identity Inconsistency: +15
+  Total: 35/100 → Medium Risk
+Recommendation: Request additional identity verification documents.
+  • Fraud ring membership: +30 pts → 65/100 (High)",,58,5,True,1,False,1,False,1,False
+APP-07225147,Farhan Prakash,1983-01-01,barora@example.net,7509977008,"40/86
+Chhabra Street",Loni,Chhattisgarh,398454,REF-8062744493,DEV-473392EF4692,2026-08-22,"Dora, Andra and Kamdar",Self-Employed,2581775.49,New,synthetic_fraud,synthetic_identity,15.0,Low,['Date of birth is Jan 1st – often a placeholder (+15 pts)'],"Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,43,1,False,1,False,1,False,1,False
+APP-75117838,Watika Dhaliwal,1999-06-13,owen89@example.com,6915452267,"92/644, Goel Street",Chapra,Madhya Pradesh,295939,DOC-8925586537,DEV-F206534DA63A,2025-12-08,"Patla, Bora and Prakash",Salaried,1531078.07,New,genuine,new_identity,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,27,1,False,1,False,1,False,1,False
+APP-07591872,Wazir Saini,1971-04-06,xavier75@example.net,+910202758842,"832
+Rout Nagar",Muzaffarpur,Nagaland,050641,DOC-8289542557,DEV-EE21BF548306,2026-08-28,Iyer-Manne,Self-Employed,3204767.06,New,fraud_ring,fraud_ring,100.0,Critical,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Device ID shared with 3 other applicant(s) (+25 pts)', 'Pincode starts with zeros: 050641 – possibly invalid (+15 pts)', 'Multiple (2) shared attributes detected (+10 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  • Shared Device: +25
+  • Identity Inconsistency: +15
+  • Multiple Shared: +10
+  Total: 70/100 → High Risk
+Recommendation: Escalate to fraud analyst for manual review before approval.
+  • Fraud ring membership: +30 pts → 100/100 (Critical)",,55,5,True,1,False,4,True,1,False
+APP-94384972,Theodore Deol,1986-03-16,sanyaloke@example.com,+916122753046,"90/45
+Bhatia Ganj",Kirari Suleman Nagar,Jharkhand,684145,DOC-5132435760,DEV-079795362E90,2026-10-08,Varma-Narang,Salaried,1248537.46,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,40,1,False,1,False,1,False,1,False
+APP-85376112,Zinal Yohannan,1983-05-12,ayaan14@example.org,3654145868,"H.No. 196
+Murthy Path",Medininagar,Mizoram,693406,DOC-1901562182,DEV-D6F0E07D1E19,2026-01-25,N/A,Unemployed,92717.33,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,43,1,False,1,False,1,False,1,False
+APP-20325372,Jairaj Shan,1969-04-06,vaishnavibora@example.com,9513433200,"93/676
+Divan Ganj",Aligarh,Tripura,328708,DOC-2691115267,DEV-A8C4A0849D0C,2026-08-13,"Gara, Chad and Mander",Self-Employed,3499986.22,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,57,1,False,1,False,1,False,1,False
+APP-28960979,Siddharth Murty,2003-12-20,isha34@example.net,+913413164752,"H.No. 433, Chaudry Street",Gudivada,Maharashtra,030564,DOC-4190268310,DEV-D1DFEA59569C,2025-12-22,"Pathak, Handa and Boase",Contract,152927.45,New,genuine,normal,15.0,Low,['Pincode starts with zeros: 030564 – possibly invalid (+15 pts)'],"Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,22,1,False,1,False,1,False,3,False
+APP-98182787,Vedika Srivastava,1992-07-12,kotharirehaan@example.org,+916566701065,"624
+Krish Chowk",Mango,Uttar Pradesh,080132,DOC-5131999541,DEV-24408D4A4801,2026-05-24,Gupta-Chandra,Self-Employed,4417865.01,New,genuine,normal,15.0,Low,['Pincode starts with zeros: 080132 – possibly invalid (+15 pts)'],"Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,34,1,False,1,False,1,False,1,False
+APP-64524468,Lopa Agrawal,2004-10-28,yagneshvarty@example.org,+917751401051,"H.No. 86, Kata Chowk",Udaipur,Goa,609379,REF-4864584877,DEV-AAADA2F57363,2026-05-22,N/A,Unemployed,6175142.66,New,synthetic_fraud,synthetic_identity,30.0,Medium,"['Very high income (6,175,143) for young applicant (age 22) (+15 pts)', 'Unemployed applicant reports income 6,175,143 (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +30
+  Total: 30/100 → Medium Risk
+Recommendation: Request additional identity verification documents.",,22,1,False,1,False,1,False,1,False
+APP-05293930,Chandani Chawla,2002-09-24,andratara@example.net,04353462475,"H.No. 838, Deo Road",Coimbatore,Haryana,427849,DOC-6298026219,DEV-512A4DDE8267,2026-02-06,"Bumb, Saini and Virk",Contract,264387.73,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,24,1,False,1,False,1,False,1,False
+APP-77746305,Varenya Joshi,1984-09-21,lipikakibe@example.com,+913427086688,"H.No. 17, Chanda Path",Faridabad,Himachal Pradesh,000212,DOC-8746902196,DEV-537148B60FCB,2026-04-23,Yogi Group,Contract,115579.8,New,synthetic_fraud,synthetic_identity,15.0,Low,['Pincode starts with zeros: 000212 – possibly invalid (+15 pts)'],"Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,42,1,False,1,False,1,False,1,False
+APP-24228355,Vritti Iyengar,1981-09-07,kbose@example.org,5569092755,"54
+Comar Ganj",Gaya,Meghalaya,814473,REF-7181375021,DEV-68AF04833F8C,2026-04-24,Bhavsar and Sons,Self-Employed,2725210.53,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,45,1,False,1,False,1,False,1,False
+APP-43600741,Sarthak Kakar,1968-08-28,doshimanthan@example.net,02047116719,"H.No. 318
+Kara Marg",Hospet,Manipur,964990,DOC-4184782742,DEV-F8A6CD4F0337,2026-04-14,N/A,Unemployed,104794.67,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,58,1,False,1,False,1,False,1,False
+APP-84092616,Tripti Walia,1980-11-07,anirudhsastry@example.com,7289623091,"636
+Sinha Circle",Durgapur,Mizoram,857865,DOC-8080098557,DEV-F53433E1D8D2,2026-04-26,Kari-Behl,Self-Employed,1589672.99,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,46,1,False,1,False,1,False,1,False
+APP-19262391,Harshil D’Alia,1969-09-20,devansh49@example.net,+910202758842,"410
+Sanghvi Path",Mehsana,Manipur,079252,REF-7387503099,DEV-EE21BF548306,2026-10-21,N/A,Unemployed,395563.92,New,fraud_ring,fraud_ring,100.0,Critical,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Device ID shared with 3 other applicant(s) (+25 pts)', 'Address shared with 3 other applicant(s) (+10 pts)', 'Pincode starts with zeros: 079252 – possibly invalid (+15 pts)', 'Multiple (3) shared attributes detected (+10 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  • Shared Device: +25
+  • Shared Address: +10
+  • Identity Inconsistency: +15
+  • Multiple Shared: +10
+  Total: 80/100 → Critical Risk
+Recommendation: Immediate analyst review required. Do not process until cleared.
+  • Fraud ring membership: +30 pts → 100/100 (Critical)",,57,5,True,1,False,4,True,4,True
+APP-33626704,Nidhi Bail,1999-10-17,kairai@example.net,+914324451076,"85/16, Sarin Nagar",Jaunpur,Assam,969664,SYN-2749582259,DEV-8BE586860619,2026-03-20,Bhakta-Amble,Contract,356883.39,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,27,1,False,1,False,1,False,1,False
+APP-12606894,Faqid Chander,1975-08-07,xz445972@tempmail.xyz,+919584982544,"H.No. 22, Dhingra Ganj",Shahjahanpur,Tripura,729466,DOC-6824922997,DEV-E4AD281332D2,2025-11-30,"Dewan, Jhaveri and Jhaveri",Self-Employed,1194933.42,New,synthetic_fraud,synthetic_identity,30.0,Medium,"['Suspicious disposable email domain: tempmail.xyz (+15 pts)', 'Email local part contains excessive digits (possibly auto-generated) (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +30
+  Total: 30/100 → Medium Risk
+Recommendation: Request additional identity verification documents.",,51,1,False,1,False,1,False,1,False
+APP-10371381,Yasti Solanki,1975-10-15,joshua36@example.net,+915951484656,"29/946
+Acharya Circle",Baranagar,Gujarat,995777,DOC-2370499022,DEV-550047730887,2026-05-31,"Hegde, Patla and Sankar",Salaried,1797469.1,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,51,1,False,1,False,1,False,1,False
+APP-77191506,Harshil Bal,1973-12-01,xz132972@tempmail.xyz,+919619431142,"H.No. 11
+Morar Nagar",Karimnagar,Tripura,121267,REF-9899675221,DEV-AA7D49BC4B0D,2025-11-27,N/A,Unemployed,376743.83,New,synthetic_fraud,synthetic_identity,30.0,Medium,"['Suspicious disposable email domain: tempmail.xyz (+15 pts)', 'Email local part contains excessive digits (possibly auto-generated) (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +30
+  Total: 30/100 → Medium Risk
+Recommendation: Request additional identity verification documents.",,53,1,False,1,False,1,False,1,False
+APP-47614680,Harini Choudhury,1975-11-08,opathak@example.org,7242388496,"H.No. 433, Chaudry Street",Gudivada,Maharashtra,848018,REF-7606524296,DEV-E11758D44B2A,2026-08-05,Tata Group,Contract,299076.56,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,51,1,False,1,False,1,False,3,False
+APP-17539312,Yadavi Ganguly,1978-10-04,rachitathakkar@example.org,+915177852892,"24/22, Kar Path",Kadapa,Jharkhand,438424,REF-0786772423,DEV-A2D8EAAEC1AF,2026-04-07,"Roy, Rout and Borah",Self-Employed,2113904.88,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,48,1,False,1,False,1,False,1,False
+APP-05667686,Lakshmi Wali,1972-04-27,calebverma@example.com,08117758917,"00/766
+Swaminathan Zila",Srinagar,Assam,921249,DOC-9443425458,DEV-963EADCEFA61,2026-06-13,Date Ltd,Self-Employed,3097825.48,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,54,1,False,1,False,1,False,1,False
+APP-35572089,Ekaraj Dhar,1991-06-01,gkapur@example.com,0494519832,"H.No. 493
+Bal Marg",Bhopal,Goa,455022,SYN-9459654137,DEV-A13FC463E348,2026-01-09,Pandya-Sampath,Self-Employed,2321796.59,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,35,1,False,1,False,1,False,1,False
+APP-41455999,Vihaan Bir,1972-12-08,xalaknazareth@example.com,08996423536,"77/252
+Suresh Street",Hosur,Rajasthan,801006,REF-1336869411,DEV-0900EF0A8835,2026-04-05,N/A,Unemployed,3219031.38,New,synthetic_fraud,synthetic_identity,15.0,Low,"['Unemployed applicant reports income 3,219,031 (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,54,1,False,1,False,1,False,1,False
+APP-18536797,Ranveer Das,1980-11-18,oeshichaudhary@example.com,+911382675869,"H.No. 05
+Sawhney Ganj",Noida,West Bengal,158506,REF-6725448936,DEV-E302A5B87DB7,2026-01-17,N/A,Unemployed,387234.81,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,46,1,False,1,False,1,False,1,False
+APP-00200756,Parth Ravi,1976-12-30,nayakbhavani@example.com,+916206724004,"874
+Chowdhury Ganj",Ujjain,Telangana,420549,SYN-6545784863,DEV-67AE12572409,2026-03-27,"Kata, Warrior and Barad",Contract,240437.54,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,49,1,False,1,False,1,False,1,False
+APP-54705623,Harinakshi Pau,2002-10-17,neha50@example.com,07974801624,"83/58, Borah Road",Dibrugarh,Manipur,991216,SYN-7905341339,DEV-E9BA244084B8,2026-01-24,"Pandit, Bava and Bedi",Contract,107186.25,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,24,1,False,1,False,1,False,1,False
+APP-52853686,Hemani Natarajan,1974-07-16,tanmayidhillon@example.com,+917127484677,"82/14, Oak Marg",Delhi,Jharkhand,997278,REF-7167189103,DEV-8129BBB32C49,2025-12-14,"Reddy, Chander and Kar",Salaried,1843644.46,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,52,1,False,1,False,1,False,1,False
+APP-06780044,Chakrika Merchant,1997-05-06,tripti40@example.com,+911969379237,"82/175
+Mistry",Chandrapur,Manipur,367136,SYN-2452474024,DEV-B2D264792051,2026-07-24,Gole-Garde,Self-Employed,1669788.94,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,29,1,False,1,False,1,False,1,False
+APP-63771771,Udant Bajwa,1967-11-05,warjasgaba@example.org,+914505331586,"H.No. 256
+Loke Ganj",Moradabad,Madhya Pradesh,733754,SYN-1424039274,DEV-FFD4AFCB6762,2026-04-23,"Divan, Sani and Datta",Salaried,1484205.56,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,59,1,False,1,False,1,False,1,False
+APP-95771172,Priya Prabhakar,2004-03-14,gadedeepa@example.org,+917193745299,"H.No. 96, Issac Marg",Guntakal,Tamil Nadu,149190,SYN-5374918104,DEV-B0BD9E157EE3,2026-03-04,N/A,Unemployed,376184.05,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,22,1,False,1,False,1,False,1,False
+APP-87082075,Michael Khare,2004-03-06,suhaninarain@example.com,0162720465,"H.No. 64
+Singhal Zila",Panvel,Arunachal Pradesh,310033,REF-2843720138,DEV-586D9D16CB35,2026-07-06,Ramesh PLC,Contract,192366.76,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,22,1,False,1,False,1,False,1,False
+APP-04345321,Varenya Sastry,1999-04-19,harish34@example.org,+913518233749,"408
+Mahal Street",Meerut,Nagaland,271094,DOC-6888728645,DEV-91BF42550908,2026-09-24,N/A,Unemployed,226067.78,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,27,1,False,1,False,1,False,1,False
+APP-57250824,Omaja Nagarajan,1965-03-29,arorayash@example.org,+910202758842,"410
+Sanghvi Path",Bharatpur,Madhya Pradesh,208635,REF-3665631557,DEV-AFAB0ECC6BC7,2026-08-03,Upadhyay Inc,Self-Employed,4207143.74,New,fraud_ring,fraud_ring,70.0,High,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Address shared with 3 other applicant(s) (+10 pts)', 'Multiple (2) shared attributes detected (+10 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  • Shared Address: +10
+  • Multiple Shared: +10
+  Total: 40/100 → Medium Risk
+Recommendation: Request additional identity verification documents.
+  • Fraud ring membership: +30 pts → 70/100 (High)",,61,5,True,1,False,1,False,4,True
+APP-31985974,Balendra Pingle,1975-09-17,dkrishnamurthy@example.org,+918244935348,"H.No. 00
+De Path",Nanded,Telangana,868011,DOC-9043821442,DEV-0377D35583AF,2026-07-21,Lalla Inc,Self-Employed,4397532.58,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,51,1,False,1,False,1,False,1,False
+APP-34720359,Chaitanya Ratta,1977-10-13,chavvikhurana@example.com,2807374167,"66/179, Rattan Chowk",Tinsukia,Arunachal Pradesh,891135,DOC-2948620044,DEV-6B0A56B8571A,2026-08-13,N/A,Unemployed,4562912.5,New,synthetic_fraud,synthetic_identity,15.0,Low,"['Unemployed applicant reports income 4,562,912 (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,49,1,False,1,False,1,False,1,False
+APP-18990428,Maanas Manne,1990-09-21,tanveer28@example.net,+910472779010,"H.No. 434
+Batta Zila",Gurgaon,Rajasthan,117980,SYN-4072663850,DEV-E2B91CE112F1,2026-05-07,Nayak and Sons,Contract,84453.97,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,36,1,False,1,False,1,False,1,False
+APP-35025364,Yash Wali,1986-05-18,biswaswahab@example.net,05961586578,"161
+Sawhney Zila",Dewas,Andhra Pradesh,504556,DOC-5329247563,DEV-CF80584BF51E,2026-03-17,N/A,Unemployed,352304.91,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,40,1,False,1,False,1,False,1,False
+APP-54719720,Tanveer Narang,1996-03-07,dugalhitesh@example.org,+914456557431,"56
+Wason Zila",Dhule,Manipur,741124,REF-2939217779,DEV-FE4D736872FE,2025-12-04,Deshpande PLC,Self-Employed,3101127.36,New,fraud_ring,fraud_ring,50.0,Medium,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  Total: 20/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.
+  • Fraud ring membership: +30 pts → 50/100 (Medium)",,30,5,True,1,False,1,False,1,False
+APP-42388906,Keya Sankaran,2004-06-12,vzachariah@example.com,+913926142939,"18/501, Kata Marg",Mau,Punjab,504773,REF-3755362174,DEV-E381A56E2180,2026-05-11,N/A,Unemployed,8649786.9,New,synthetic_fraud,synthetic_identity,30.0,Medium,"['Very high income (8,649,787) for young applicant (age 22) (+15 pts)', 'Unemployed applicant reports income 8,649,787 (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +30
+  Total: 30/100 → Medium Risk
+Recommendation: Request additional identity verification documents.",,22,1,False,1,False,1,False,1,False
+APP-87152409,Xavier Solanki,1988-10-18,nigamansh@example.net,3465787133,"30/10, Bir Ganj",Bathinda,Assam,473829,DOC-9598076526,DEV-4F03D4B844E9,2026-09-29,"Sampath, Kakar and Zacharia",Self-Employed,1608800.62,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,38,1,False,1,False,1,False,1,False
+APP-70985739,Parth Shetty,2004-10-16,ramakrishnanupma@example.org,+919621851888,"H.No. 40
+Bir Path",New Delhi,Telangana,952058,DOC-8592089341,DEV-AE7AF19B3401,2026-11-06,Agarwal-Pandit,Salaried,817419.79,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,22,1,False,1,False,1,False,1,False
+APP-00180549,Avi Som,1996-03-31,yutikadey@example.com,6800025787,"694
+Nayar",Phusro,Jharkhand,055169,DOC-1426460350,DEV-42D136878EAC,2026-06-24,Issac PLC,Salaried,1907050.95,New,genuine,normal,15.0,Low,['Pincode starts with zeros: 055169 – possibly invalid (+15 pts)'],"Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,30,1,False,1,False,1,False,1,False
+APP-22387732,Zayan Kashyap,1965-06-29,ysem@example.org,0831367837,"H.No. 36, Mohan Ganj",Bhalswa Jahangir Pur,Nagaland,685574,DOC-1056387621,DEV-0D3FCD0AFE44,2026-11-13,Mammen-Majumdar,Contract,94788.39,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,61,1,False,1,False,1,False,1,False
+APP-02751144,Wridesh Kale,1967-12-30,gunbirbedi@example.com,08815371473,"63/25
+Munshi",Kozhikode,Meghalaya,747016,DOC-3758898660,DEV-9589A6FDF6D6,2025-12-24,"Pai, Rastogi and De",Salaried,1710083.34,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,58,1,False,1,False,1,False,1,False
+APP-59232116,Aarini Subramaniam,2000-07-03,laksh10@example.com,+919097439533,"H.No. 952
+Merchant Zila",Vijayanagaram,Goa,285884,DOC-1157124795,DEV-2E4DFD0DA7E2,2026-07-04,Randhawa LLC,Contract,393763.4,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,26,1,False,1,False,1,False,1,False
+APP-86083023,Ria Shroff,1999-09-09,bishakhabumb@example.com,00614973103,"H.No. 67, Lanka Chowk",Tinsukia,Madhya Pradesh,565270,REF-3404440226,DEV-3E243D51CDE9,2026-12-10,N/A,Unemployed,277334.01,New,genuine,new_identity,27.0,Low,"['Application date is in the future: 2026-12-10 (+15 pts)', 'Future application date (2026-12-10) (+12 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  • Velocity: +12
+  Total: 27/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,27,1,False,1,False,1,False,1,False
+APP-56290447,Watika Tank,1979-07-28,muttidayita@example.net,7221704303,"74/03
+Parikh Road",Bathinda,Himachal Pradesh,566765,DOC-7868692624,DEV-B43C2F07BF25,2026-07-28,N/A,Unemployed,353744.06,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,47,1,False,1,False,1,False,1,False
+APP-24810891,Daksha Tailor,1963-07-27,shajyoti@example.net,01236851604,"65/13
+Bakshi Chowk",Phagwara,Haryana,746120,SYN-6710243928,DEV-17658E78A9BA,2026-09-28,Nigam-Contractor,Self-Employed,4146155.1,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,63,1,False,1,False,1,False,1,False
+APP-83665280,Praneel Murty,1976-04-08,xz457108@tempmail.xyz,3410166687,"59
+Wable Zila",Berhampur,Gujarat,401489,REF-3646308392,DEV-90C7FED12AFA,2026-10-27,Sharaf-Kohli,Contract,104013.17,New,synthetic_fraud,synthetic_identity,30.0,Medium,"['Suspicious disposable email domain: tempmail.xyz (+15 pts)', 'Email local part contains excessive digits (possibly auto-generated) (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +30
+  Total: 30/100 → Medium Risk
+Recommendation: Request additional identity verification documents.",,50,1,False,1,False,1,False,1,False
+APP-09419830,Krishna Prashad,1995-10-03,aarush39@example.org,+918679087406,"51, Bhasin Circle",Chittoor,Arunachal Pradesh,622656,SYN-1275575686,DEV-330BD482D25A,2026-01-24,N/A,Unemployed,3904229.84,New,synthetic_fraud,synthetic_identity,15.0,Low,"['Unemployed applicant reports income 3,904,230 (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,31,1,False,1,False,1,False,1,False
+APP-41583061,Noah Lanka,1976-07-07,kashviedwin@example.net,00482814893,"57/01, Mohanty Path",Howrah,Haryana,171822,REF-3942252583,DEV-C0A7A8452E09,2026-08-05,Saran-Dugar,Salaried,1995453.82,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,50,1,False,1,False,1,False,1,False
+APP-21280622,Deepa Atwal,1966-06-16,shereodika@example.org,06807154516,"59/77, Jani Nagar",Jamalpur,Chhattisgarh,771093,REF-2948470920,DEV-9F992C37468C,2025-12-27,Sabharwal-Tandon,Salaried,368438.83,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,60,1,False,1,False,1,False,1,False
+APP-45021185,Saanvi Kalla,1966-10-15,chaudryharshil@example.com,00632424154,"H.No. 26
+Dhar Street",Bettiah,Odisha,927532,REF-8051929549,DEV-7D5C67813120,2026-03-12,Karnik Group,Self-Employed,2446499.69,New,fraud_ring,fraud_ring,50.0,Medium,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  Total: 20/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.
+  • Fraud ring membership: +30 pts → 50/100 (Medium)",,60,5,True,1,False,1,False,1,False
+APP-68797354,Joshua Walla,1975-12-31,wahuja@example.com,7603669096,"88
+Kannan",Muzaffarnagar,Himachal Pradesh,706562,SYN-3589792171,DEV-7CFFE14728FD,2026-04-28,Reddy-Narayanan,Self-Employed,318974.54,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,50,1,False,1,False,1,False,1,False
+APP-95313287,Raksha Banerjee,1968-12-11,chakrika47@example.net,+916169284511,"757
+Pandit Nagar",Panipat,Rajasthan,165820,REF-0269039728,DEV-2DED286BAE8E,2026-02-15,Venkataraman-Loke,Salaried,652167.53,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,57,1,False,1,False,1,False,1,False
+APP-09579916,Wridesh Tata,1975-08-31,rajagopalanindali@example.com,00632424154,"341
+Mane Ganj",Barasat,Gujarat,640376,SYN-1888506113,DEV-5D8CFEED5DCD,2026-07-21,Chaudhry and Sons,Self-Employed,232784.58,New,fraud_ring,fraud_ring,50.0,Medium,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  Total: 20/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.
+  • Fraud ring membership: +30 pts → 50/100 (Medium)",,51,5,True,1,False,1,False,1,False
+APP-28909287,Chakradev Kannan,1995-03-08,bennachiket@example.org,+916675254599,"14/767, Sathe",Darbhanga,Gujarat,561497,DOC-1550994184,DEV-5094B053C01F,2026-06-29,"Balasubramanian, Chand and Wali",Salaried,1165082.43,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,31,1,False,1,False,1,False,1,False
+APP-38815869,Tanish Grover,1971-09-04,falan01@example.org,+914456557431,"151
+Shenoy Nagar",Gulbarga,Odisha,670662,REF-9641717495,DEV-229F5F366EE2,2026-01-01,N/A,Unemployed,386315.81,New,fraud_ring,fraud_ring,50.0,Medium,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  Total: 20/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.
+  • Fraud ring membership: +30 pts → 50/100 (Medium)",,55,5,True,1,False,1,False,1,False
+APP-07955198,Tanmayi Anand,1973-05-24,faras95@example.org,+910202758842,"410
+Sanghvi Path",Mangalore,Haryana,617445,SYN-0669820546,DEV-EE21BF548306,2026-11-01,N/A,Unemployed,158314.93,New,fraud_ring,fraud_ring,95.0,Critical,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Device ID shared with 3 other applicant(s) (+25 pts)', 'Address shared with 3 other applicant(s) (+10 pts)', 'Multiple (3) shared attributes detected (+10 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  • Shared Device: +25
+  • Shared Address: +10
+  • Multiple Shared: +10
+  Total: 65/100 → High Risk
+Recommendation: Escalate to fraud analyst for manual review before approval.
+  • Fraud ring membership: +30 pts → 95/100 (Critical)",,53,5,True,1,False,4,True,4,True
+APP-43402250,Owen Lanka,1985-09-15,tarakkaul@example.com,9005329318,"04/22, Krishna Circle",Bhubaneswar,Sikkim,205395,DOC-5227746976,DEV-AB8C79D6838A,2025-12-22,Chand-Kala,Salaried,1666639.66,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,41,1,False,1,False,1,False,1,False
+APP-92179830,Ijaya Soni,1993-12-01,mahika79@example.net,+911438889937,"H.No. 07, Merchant Zila",Guwahati,Bihar,545738,REF-2023628135,DEV-913A9AFD2689,2026-06-18,N/A,Unemployed,5491327.71,New,synthetic_fraud,synthetic_identity,15.0,Low,"['Unemployed applicant reports income 5,491,328 (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,33,1,False,1,False,1,False,1,False
+APP-59788939,Charita Puri,1965-01-01,warjas42@example.net,03830284395,"44, Gill Nagar",Miryalaguda,Meghalaya,568566,SYN-2914924300,DEV-9348CB88D9D0,2026-03-13,Basu Group,Self-Employed,1995015.14,New,synthetic_fraud,synthetic_identity,15.0,Low,['Date of birth is Jan 1st – often a placeholder (+15 pts)'],"Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,61,1,False,1,False,1,False,1,False
+APP-31311979,Faqid Goel,1980-04-07,fviswanathan@example.com,02975161369,"53/521
+Comar Circle",Karnal,Kerala,312432,REF-2707783689,DEV-703346898128,2026-03-17,N/A,Unemployed,388743.82,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,46,1,False,1,False,1,False,1,False
+APP-61969725,Jagrati Srinivasan,1999-02-21,bakhshikorpal@example.net,+914456557431,"68
+Bhat Chowk",Parbhani,Madhya Pradesh,638380,SYN-2406996054,DEV-1D483EE91883,2026-11-17,Mammen-Sehgal,Salaried,1200010.0,New,fraud_ring,fraud_ring,50.0,Medium,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  Total: 20/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.
+  • Fraud ring membership: +30 pts → 50/100 (Medium)",,27,5,True,1,False,1,False,1,False
+APP-13617993,Lucky Choudhry,1998-03-25,lmore@example.com,5590599293,"H.No. 039, Bahri Ganj",Mumbai,Karnataka,252500,SYN-4475805028,DEV-1E33F42A72D4,2026-11-27,Goda and Sons,Salaried,1108350.49,New,genuine,new_identity,27.0,Low,"['Application date is in the future: 2026-11-27 (+15 pts)', 'Future application date (2026-11-27) (+12 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  • Velocity: +12
+  Total: 27/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,28,1,False,1,False,1,False,1,False
+APP-99069925,Henry Dyal,1984-01-06,atharv13@example.net,08877190659,"49/027, Sathe Circle",Bokaro,Odisha,717565,SYN-2436778995,DEV-DF5B24C5A66D,2026-05-08,Modi-Rau,Contract,269405.69,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,42,1,False,1,False,1,False,1,False
+APP-91729180,Yashica Zacharia,1994-07-10,inarasimhan@example.net,01925462914,"68/505, Gole Road",Mau,Tripura,332214,REF-2089614356,DEV-9A04C7A55CB6,2026-04-22,Krishnan-Doctor,Self-Employed,3513504.86,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,32,1,False,1,False,1,False,1,False
+APP-76842202,Sanya Bava,1995-06-03,ubika86@example.net,5128682300,"375
+Majumdar Street",Gorakhpur,Arunachal Pradesh,903311,DOC-2979165477,DEV-35BBA1B35CC1,2026-03-13,N/A,Unemployed,7084456.2,New,synthetic_fraud,synthetic_identity,15.0,Low,"['Unemployed applicant reports income 7,084,456 (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,31,1,False,1,False,1,False,1,False
+APP-10379843,Falan Singh,1978-12-25,nadkarniurvashi@example.net,8675339636,"27
+Date Nagar",Salem,West Bengal,187026,SYN-7505606044,DEV-C83980C3DAFE,2026-04-18,N/A,Unemployed,387452.02,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,47,1,False,1,False,1,False,1,False
+APP-51486610,Priya Gandhi,2004-07-01,loyaljeevika@example.net,+918427978819,"78/361, Mishra Ganj",Hospet,Himachal Pradesh,171339,SYN-0000000000,DEV-61C1194311F6,2026-10-25,Bali-Maharaj,Self-Employed,3587721.11,New,synthetic_fraud,synthetic_identity,30.0,Medium,"['Very high income (3,587,721) for young applicant (age 22) (+15 pts)', 'ID reference has suspicious uniform pattern: SYN-0000000000 (+15 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +30
+  Total: 30/100 → Medium Risk
+Recommendation: Request additional identity verification documents.",,22,1,False,1,False,1,False,1,False
+APP-82390137,Yadavi Wable,1992-09-02,rakshabassi@example.com,8059296222,"37/947
+Walla Ganj",Tirupati,Uttar Pradesh,359774,SYN-9625670649,DEV-869392FB7843,2026-07-02,N/A,Unemployed,328237.11,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,34,1,False,1,False,1,False,1,False
+APP-58056409,Bahadurjit Menon,2004-08-02,aahana10@example.org,05215704331,"62
+Tailor Marg",Etawah,Nagaland,179327,DOC-2943946606,DEV-4E55DE8BEA75,2026-11-28,Brahmbhatt-Khanna,Contract,308194.73,New,genuine,new_identity,27.0,Low,"['Application date is in the future: 2026-11-28 (+15 pts)', 'Future application date (2026-11-28) (+12 pts)']","Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  • Velocity: +12
+  Total: 27/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,22,1,False,1,False,1,False,1,False
+APP-18112167,Mitesh Bhagat,1989-10-09,bbalasubramanian@example.net,+911526218159,"62/01, Jha Path",Alappuzha,Tamil Nadu,443106,REF-1045510557,DEV-D602536C3EFE,2026-05-12,Nagar LLC,Contract,83949.0,New,genuine,new_identity,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,37,1,False,1,False,1,False,1,False
+APP-72220581,Azaan Kannan,1982-01-14,rachitmurty@example.com,6627828274,"H.No. 07, Hayer Street",Kishanganj,Mizoram,000977,REF-7283695776,DEV-65E283209450,2026-11-12,"Rama, Sahota and Devi",Self-Employed,3065166.16,New,synthetic_fraud,synthetic_identity,15.0,Low,['Pincode starts with zeros: 000977 – possibly invalid (+15 pts)'],"Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,44,1,False,1,False,1,False,1,False
+APP-34266101,Yachana Sagar,2003-02-17,wableadvik@example.com,00632424154,"696
+Gera Path",Srinagar,Andhra Pradesh,043006,DOC-1345873192,DEV-8D5A8728C280,2026-01-15,N/A,Unemployed,150671.76,New,fraud_ring,fraud_ring,65.0,High,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Pincode starts with zeros: 043006 – possibly invalid (+15 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  • Identity Inconsistency: +15
+  Total: 35/100 → Medium Risk
+Recommendation: Request additional identity verification documents.
+  • Fraud ring membership: +30 pts → 65/100 (High)",,23,5,True,1,False,1,False,1,False
+APP-20833460,Hiral Sathe,1995-01-01,chamelimani@example.net,08549733484,"75/758, Mani Road",Chapra,Sikkim,652404,REF-5533331515,DEV-5C7A251DDE34,2026-05-31,N/A,Unemployed,192351.92,New,genuine,normal,15.0,Low,['Date of birth is Jan 1st – often a placeholder (+15 pts)'],"Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,31,1,False,1,False,1,False,1,False
+APP-51834242,Kashish Chad,1966-04-26,ishanirandhawa@example.net,+914456557431,"44/206, Krish Chowk",Surendranagar Dudhrej,Bihar,100323,REF-4877323087,DEV-5D8D730E0236,2026-11-17,Chand Ltd,Self-Employed,1451715.73,New,fraud_ring,fraud_ring,50.0,Medium,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  Total: 20/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.
+  • Fraud ring membership: +30 pts → 50/100 (Medium)",,60,5,True,1,False,1,False,1,False
+APP-20760359,Daniel Chakraborty,1983-10-02,waliupkaar@example.net,+918484219933,"H.No. 165, Chaudhry Chowk",Kolkata,Nagaland,677345,REF-7749566861,DEV-0A34DBFB1C86,2026-10-22,"Kunda, Srinivas and Kala",Self-Employed,2450821.2,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,43,1,False,1,False,1,False,1,False
+APP-55884584,Lipika Pant,1982-05-24,lipika42@example.org,+914456557431,"30/40
+Wagle Chowk",Bhimavaram,Haryana,133480,SYN-2623709426,DEV-567235790D84,2026-06-25,"Sundaram, Padmanabhan and Thakkar",Contract,298893.32,New,fraud_ring,fraud_ring,50.0,Medium,"['Phone shared with 4 other applicant(s) (+20 pts)', 'Member of fraud ring (5 applicants, Critical risk) (+30 pts)']","Risk Score Breakdown:
+  • Shared Phone: +20
+  Total: 20/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.
+  • Fraud ring membership: +30 pts → 50/100 (Medium)",,44,5,True,1,False,1,False,1,False
+APP-84097598,Mitali Srinivas,1967-01-10,owenpathak@example.net,02715518844,"H.No. 323, Bal Chowk",Begusarai,Odisha,782911,DOC-5490446490,DEV-86B708C9FA0C,2026-10-15,Deshmukh Inc,Salaried,847590.09,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,59,1,False,1,False,1,False,1,False
+APP-66171998,Nakul Sastry,1964-06-20,dev86@example.org,08457759017,"745
+Nazareth Road",Buxar,West Bengal,500170,SYN-0000000000,DEV-45D04D1A253C,2026-10-31,N/A,Unemployed,294346.87,New,synthetic_fraud,synthetic_identity,15.0,Low,['ID reference has suspicious uniform pattern: SYN-0000000000 (+15 pts)'],"Risk Score Breakdown:
+  • Identity Inconsistency: +15
+  Total: 15/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,62,1,False,1,False,1,False,1,False
+APP-14949682,Ayaan Nagar,1977-09-25,dyalanjali@example.com,2407581814,"13, Palla Chowk",Vijayanagaram,Arunachal Pradesh,853615,SYN-9634570271,DEV-D28F980C1F71,2026-09-19,Edwin-Iyengar,Self-Employed,3975261.49,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,49,1,False,1,False,1,False,1,False
+APP-99033324,Dhriti Nagar,1986-07-18,tankbimala@example.net,0010943969,"36
+Setty Road",Allahabad,Goa,677359,SYN-7310956489,DEV-1DE8E31EAF00,2026-04-23,"Dube, Garg and Nazareth",Salaried,1775756.65,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,40,1,False,1,False,1,False,1,False
+APP-87654415,Farhan Memon,2004-07-30,abeer26@example.com,+913890838637,"H.No. 433, Chaudry Street",Gudivada,Maharashtra,940781,SYN-2501652580,DEV-964F4B01A403,2026-09-05,Balan Inc,Salaried,1486836.97,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,22,1,False,1,False,1,False,3,False
+APP-79951253,Shivani Guha,1987-07-11,daksh58@example.org,9955271774,"70
+Pillay Nagar",Solapur,Rajasthan,998679,DOC-9072630365,DEV-DED5FF2C3031,2026-06-16,"Tak, Shetty and Sen",Self-Employed,3208636.06,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,39,1,False,1,False,1,False,1,False
+APP-43460216,Isha Kuruvilla,1992-01-16,veda76@example.net,00671657262,"H.No. 31
+Seshadri Road",Madhyamgram,Odisha,507527,DOC-4421496963,DEV-277D4334E8EA,2026-02-18,Toor Ltd,Self-Employed,4201880.81,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,34,1,False,1,False,1,False,1,False
+APP-60832798,Tanish Bhatt,2000-01-18,qsengupta@example.org,8957986872,"73/47
+Mangal Zila",Darbhanga,Karnataka,812236,DOC-9147519610,DEV-F0741C66D4B5,2026-05-20,Shetty Ltd,Contract,266403.06,New,genuine,normal,0.0,Low,[],"Risk Score Breakdown:
+  Total: 0/100 → Low Risk
+Recommendation: No immediate action required. Continue standard verification.",,26,1,False,1,False,1,False,1,False
